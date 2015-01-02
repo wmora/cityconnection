@@ -1,1 +1,14 @@
 apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+compileJava {
+    options.incremental = true
+}
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+}
