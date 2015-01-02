@@ -14,4 +14,9 @@ public class PlayerTest extends TestCase {
         assertEquals(player.getLivesLeft(), 3);
     }
 
+    public void testPlayerShouldStartWithZeroMileage() {
+        Player player = new Player();
+        assertEquals(player.getMileage(), 0);
+    }
+
 }
