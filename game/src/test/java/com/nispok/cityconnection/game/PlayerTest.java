@@ -6,17 +6,17 @@ public class PlayerTest extends TestCase {
 
     public void testPlayerShouldStartWithFiveOilCans() {
         Player player = new Player();
-        assertEquals(player.getOilCansLeft(), 5);
+        assertEquals(5, player.getOilCansLeft());
     }
 
     public void testPlayerShouldStartWithThreeLives() {
         Player player = new Player();
-        assertEquals(player.getLivesLeft(), 3);
+        assertEquals(3, player.getLivesLeft());
     }
 
     public void testPlayerShouldStartWithZeroMileage() {
         Player player = new Player();
-        assertEquals(player.getMileage(), 0);
+        assertEquals(0, player.getMileage());
     }
 
     public void testOilCansShouldDecreaseAfterShooting() {
