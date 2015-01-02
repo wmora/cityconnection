@@ -1,0 +1,4 @@
+def properties = [
+        name   : 'City Connection',
+        version: '0.1.0'
+]
