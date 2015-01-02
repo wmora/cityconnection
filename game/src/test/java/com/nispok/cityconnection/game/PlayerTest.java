@@ -19,4 +19,11 @@ public class PlayerTest extends TestCase {
         assertEquals(player.getMileage(), 0);
     }
 
+    public void testOilCansShouldDecreaseAfterShooting() {
+        Player player = new Player();
+        int oilCansLeft = player.getOilCansLeft();
+        player.shoot();
+        assertEquals(oilCansLeft - 1, player.getOilCansLeft());
+    }
+
 }

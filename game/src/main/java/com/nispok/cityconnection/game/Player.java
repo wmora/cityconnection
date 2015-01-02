@@ -23,4 +23,8 @@ public class Player {
     public int getMileage() {
         return mileage;
     }
+
+    public void shoot() {
+        oilCansLeft--;
+    }
 }
