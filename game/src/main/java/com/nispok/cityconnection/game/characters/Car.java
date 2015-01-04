@@ -1,6 +1,4 @@
-package com.nispok.cityconnection.game;
-
-import com.nispok.cityconnection.game.enums.Direction;
+package com.nispok.cityconnection.game.characters;
 
 public class Car {
 

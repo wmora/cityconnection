@@ -1,6 +1,6 @@
 package com.nispok.cityconnection.game;
 
-import com.nispok.cityconnection.game.enums.Direction;
+import com.nispok.cityconnection.game.characters.Direction;
 import junit.framework.TestCase;
 
 public class DirectionTest extends TestCase {
