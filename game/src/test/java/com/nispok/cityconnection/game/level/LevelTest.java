@@ -1,4 +1,4 @@
-package com.nispok.cityconnection.game;
+package com.nispok.cityconnection.game.level;
 
 import com.nispok.cityconnection.game.level.Level;
 import com.nispok.cityconnection.game.level.LevelState;
