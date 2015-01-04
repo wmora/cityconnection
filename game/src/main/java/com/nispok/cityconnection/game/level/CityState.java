@@ -1,6 +1,6 @@
 package com.nispok.cityconnection.game.level;
 
-public enum LevelState {
+public enum CityState {
 
     READY,
     PLAYING,

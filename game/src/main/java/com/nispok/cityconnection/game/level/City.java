@@ -2,36 +2,36 @@ package com.nispok.cityconnection.game.level;
 
 import com.nispok.cityconnection.game.characters.Car;
 
-public class Level {
+public class City {
     private Car car;
-    private LevelState state;
+    private CityState state;
 
-    public Level() {
+    public City() {
         car = new Car();
-        state = LevelState.READY;
+        state = CityState.READY;
     }
 
     public Car getCar() {
         return car;
     }
 
-    public LevelState getState() {
+    public CityState getState() {
         return state;
     }
 
     public void start() {
-        state = LevelState.PLAYING;
+        state = CityState.PLAYING;
     }
 
     public void pause() {
-        state = LevelState.PAUSED;
+        state = CityState.PAUSED;
     }
 
     public void resume() {
-        state = LevelState.PLAYING;
+        state = CityState.PLAYING;
     }
 
     public void finish() {
-        state = LevelState.OVER;
+        state = CityState.OVER;
     }
 }

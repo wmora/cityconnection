@@ -2,26 +2,26 @@ package com.nispok.cityconnection.game.level;
 
 import junit.framework.TestCase;
 
-public class LevelStateTest extends TestCase {
+public class CityStateTest extends TestCase {
 
     public void testFourStatesShouldBeAvailable() {
-        assertEquals(4, LevelState.values().length);
+        assertEquals(4, CityState.values().length);
     }
 
     public void testValueOfReadyStateShouldBeReady() {
-        assertEquals(LevelState.READY, LevelState.valueOf("READY"));
+        assertEquals(CityState.READY, CityState.valueOf("READY"));
     }
 
     public void testValueOfPlayingStateShouldBePlaying() {
-        assertEquals(LevelState.PLAYING, LevelState.valueOf("PLAYING"));
+        assertEquals(CityState.PLAYING, CityState.valueOf("PLAYING"));
     }
 
     public void testValueOfPausedStateShouldBePaused() {
-        assertEquals(LevelState.PAUSED, LevelState.valueOf("PAUSED"));
+        assertEquals(CityState.PAUSED, CityState.valueOf("PAUSED"));
     }
 
     public void testValueOfOverStateShouldBeOver() {
-        assertEquals(LevelState.OVER, LevelState.valueOf("OVER"));
+        assertEquals(CityState.OVER, CityState.valueOf("OVER"));
     }
 
 }
