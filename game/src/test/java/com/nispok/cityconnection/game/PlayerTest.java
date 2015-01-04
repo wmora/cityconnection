@@ -10,11 +10,6 @@ public class PlayerTest extends TestCase {
         assertEquals(5, player.getOilCansLeft());
     }
 
-    public void testPlayerShouldStartWithThreeLives() {
-        Player player = new Player();
-        assertEquals(3, player.getLivesLeft());
-    }
-
     public void testPlayerShouldStartWithZeroMileage() {
         Player player = new Player();
         assertEquals(0, player.getMileage());
@@ -25,13 +20,6 @@ public class PlayerTest extends TestCase {
         int oilCansLeft = player.getOilCansLeft();
         player.shoot();
         assertEquals(oilCansLeft - 1, player.getOilCansLeft());
-    }
-
-    public void testLivesLeftShouldDecreaseAfterCrash() {
-        Player player = new Player();
-        int livesLeft = player.getLivesLeft();
-        player.crash();
-        assertEquals(livesLeft - 1, player.getLivesLeft());
     }
 
     public void testPlayerShouldStartMovingRight() {
