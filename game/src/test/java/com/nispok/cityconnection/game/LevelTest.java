@@ -4,7 +4,7 @@ import junit.framework.TestCase;
 
 public class LevelTest extends TestCase {
 
-    public void testLevelShouldStartWithAPlayer() {
+    public void testLevelShouldStartWithACar() {
         Level level = new Level();
         assertNotNull(level.getCar());
     }
