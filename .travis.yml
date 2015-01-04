@@ -1,7 +1,4 @@
 language: java
 
-install:
-  - ./gradlew :game:assembleTest
-
 script:
   - ./gradlew :game:test jacocoTestReport
