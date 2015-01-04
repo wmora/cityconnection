@@ -18,4 +18,8 @@ public class Level {
     public LevelState getState() {
         return state;
     }
+
+    public void start() {
+        state = LevelState.PLAYING;
+    }
 }

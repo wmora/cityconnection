@@ -2,6 +2,7 @@ package com.nispok.cityconnection.game.level;
 
 public enum LevelState {
 
-    READY
+    READY,
+    PLAYING
 
 }
