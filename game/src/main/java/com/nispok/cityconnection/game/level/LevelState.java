@@ -4,6 +4,7 @@ public enum LevelState {
 
     READY,
     PLAYING,
-    PAUSED
+    PAUSED,
+    OVER
 
 }

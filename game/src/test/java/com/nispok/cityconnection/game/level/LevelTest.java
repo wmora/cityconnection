@@ -1,7 +1,5 @@
 package com.nispok.cityconnection.game.level;
 
-import com.nispok.cityconnection.game.level.Level;
-import com.nispok.cityconnection.game.level.LevelState;
 import junit.framework.TestCase;
 
 public class LevelTest extends TestCase {
@@ -37,6 +35,12 @@ public class LevelTest extends TestCase {
         Level level = new Level();
         level.resume();
         assertEquals(LevelState.PLAYING, level.getState());
+    }
+
+    public void testLevelShouldGoToOverStateAfterFinishing() {
+        Level level = new Level();
+        level.finish();
+        assertEquals(LevelState.OVER, level.getState());
     }
 
 }

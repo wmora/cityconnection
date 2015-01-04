@@ -4,8 +4,8 @@ import junit.framework.TestCase;
 
 public class LevelStateTest extends TestCase {
 
-    public void testThreeStatesShouldBeAvailable() {
-        assertEquals(3, LevelState.values().length);
+    public void testFourStatesShouldBeAvailable() {
+        assertEquals(4, LevelState.values().length);
     }
 
     public void testValueOfReadyStateShouldBeReady() {
@@ -18,6 +18,10 @@ public class LevelStateTest extends TestCase {
 
     public void testValueOfPausedStateShouldBePaused() {
         assertEquals(LevelState.PAUSED, LevelState.valueOf("PAUSED"));
+    }
+
+    public void testValueOfOverStateShouldBeOver() {
+        assertEquals(LevelState.OVER, LevelState.valueOf("OVER"));
     }
 
 }

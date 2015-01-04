@@ -30,4 +30,8 @@ public class Level {
     public void resume() {
         state = LevelState.PLAYING;
     }
+
+    public void finish() {
+        state = LevelState.OVER;
+    }
 }
