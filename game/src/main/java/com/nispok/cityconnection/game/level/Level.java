@@ -22,4 +22,8 @@ public class Level {
     public void start() {
         state = LevelState.PLAYING;
     }
+
+    public void pause() {
+        state = LevelState.PAUSED;
+    }
 }

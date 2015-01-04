@@ -27,4 +27,10 @@ public class LevelTest extends TestCase {
         assertEquals(LevelState.PLAYING, level.getState());
     }
 
+    public void testLevelShouldGoToPausedStateAfterPausing() {
+        Level level = new Level();
+        level.pause();
+        assertEquals(LevelState.PAUSED, level.getState());
+    }
+
 }
