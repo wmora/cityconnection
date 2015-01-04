@@ -26,4 +26,11 @@ public class PlayerTest extends TestCase {
         assertEquals(oilCansLeft - 1, player.getOilCansLeft());
     }
 
+    public void testLivesLeftShouldDecreaseAfterCrash() {
+        Player player = new Player();
+        int livesLeft = player.getLivesLeft();
+        player.crash();
+        assertEquals(livesLeft - 1, player.getLivesLeft());
+    }
+
 }

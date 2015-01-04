@@ -27,4 +27,8 @@ public class Player {
     public void shoot() {
         oilCansLeft--;
     }
+
+    public void crash() {
+        livesLeft--;
+    }
 }
