@@ -1,6 +1,5 @@
-package com.nispok.cityconnection.game;
+package com.nispok.cityconnection.game.characters;
 
-import com.nispok.cityconnection.game.characters.Direction;
 import junit.framework.TestCase;
 
 public class DirectionTest extends TestCase {
