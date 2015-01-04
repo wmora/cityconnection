@@ -1,13 +1,13 @@
 package com.nispok.cityconnection.game;
 
 public class Level {
-    private Player player;
+    private Car car;
 
     public Level() {
-        player = new Player();
+        car = new Car();
     }
 
-    public Player getPlayer() {
-        return player;
+    public Car getCar() {
+        return car;
     }
 }

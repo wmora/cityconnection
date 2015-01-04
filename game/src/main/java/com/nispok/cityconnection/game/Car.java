@@ -2,13 +2,13 @@ package com.nispok.cityconnection.game;
 
 import com.nispok.cityconnection.game.enums.Direction;
 
-public class Player {
+public class Car {
 
     private int oilCansLeft;
     private int mileage;
     private Direction direction;
 
-    public Player() {
+    public Car() {
         oilCansLeft = 5;
         mileage = 0;
         direction = Direction.RIGHT;

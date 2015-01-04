@@ -6,7 +6,7 @@ public class LevelTest extends TestCase {
 
     public void testLevelShouldStartWithAPlayer() {
         Level level = new Level();
-        assertNotNull(level.getPlayer());
+        assertNotNull(level.getCar());
     }
 
 }
