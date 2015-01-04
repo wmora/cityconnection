@@ -1,4 +1,4 @@
-package com.nispok.cityconnection.game.level;
+package com.nispok.cityconnection.game.city;
 
 import com.nispok.cityconnection.game.characters.Car;
 
