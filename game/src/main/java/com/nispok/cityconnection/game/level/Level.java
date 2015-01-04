@@ -1,4 +1,6 @@
-package com.nispok.cityconnection.game;
+package com.nispok.cityconnection.game.level;
+
+import com.nispok.cityconnection.game.Car;
 
 public class Level {
     private Car car;
