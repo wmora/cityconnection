@@ -1,7 +1,12 @@
 package com.nispok.cityconnection.game;
 
-/**
- * Created by wilmor24 on 3/1/15.
- */
-public class LevelTest {
+import junit.framework.TestCase;
+
+public class LevelTest extends TestCase {
+
+    public void testLevelShouldStartWithAPlayer() {
+        Level level = new Level();
+        assertNotNull(level.getPlayer());
+    }
+
 }
