@@ -1,5 +1,6 @@
 package com.nispok.cityconnection.game;
 
+import com.nispok.cityconnection.game.enums.Direction;
 import junit.framework.TestCase;
 
 public class PlayerTest extends TestCase {
@@ -31,6 +32,24 @@ public class PlayerTest extends TestCase {
         int livesLeft = player.getLivesLeft();
         player.crash();
         assertEquals(livesLeft - 1, player.getLivesLeft());
+    }
+
+    public void testPlayerShouldStartMovingRight() {
+        Player player = new Player();
+        assertEquals(Direction.RIGHT, player.getDirection());
+    }
+
+    public void testPlayerShouldChangeDirectionToLeftIfMovingRight() {
+        Player player = new Player();
+        player.changeDirection();
+        assertEquals(Direction.LEFT, player.getDirection());
+    }
+
+    public void testPlayerShouldChangeDirectionToRightIfMovingLeft() {
+        Player player = new Player();
+        player.changeDirection();
+        player.changeDirection();
+        assertEquals(Direction.RIGHT, player.getDirection());
     }
 
 }
