@@ -43,4 +43,14 @@ public class CityTest extends TestCase {
         assertEquals(CityState.OVER, city.getState());
     }
 
+    public void testCityShouldHaveAStreetMap() {
+        City city = new City();
+        assertNotNull(city.getStreetMap());
+    }
+
+    public void testCityStreetMapShouldHaveFourLevels() {
+        City city = new City();
+        assertEquals(4, city.getStreetMap().size());
+    }
+
 }
