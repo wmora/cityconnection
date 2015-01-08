@@ -9,10 +9,19 @@ public class Street {
 
     public Street() {
         blocks = new ArrayList<Block>();
+        blocks.add(new Block());
     }
 
     public List<Block> getBlocks() {
         return blocks;
     }
 
+    public boolean isCleared() {
+        for (Block block : blocks) {
+            if (!block.isCleared()) {
+                return false;
+            }
+        }
+        return true;
+    }
 }
