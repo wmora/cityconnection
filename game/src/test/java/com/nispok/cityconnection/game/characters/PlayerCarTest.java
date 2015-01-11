@@ -21,6 +21,15 @@ public class PlayerCarTest extends TestCase {
         assertEquals(oilCansLeft - 1, playerCar.getOilCansLeft());
     }
 
+    public void testOilCansLeftShouldNotBeLessThanZero() {
+        PlayerCar playerCar = new PlayerCar();
+        int timesToShoot = playerCar.getOilCansLeft() + 1;
+        for (int i = 0; i < timesToShoot; i++) {
+            playerCar.shoot();
+        }
+        assertEquals(0, playerCar.getOilCansLeft());
+    }
+
     public void testCarShouldStartMovingRight() {
         PlayerCar playerCar = new PlayerCar();
         assertEquals(Direction.RIGHT, playerCar.getDirection());
