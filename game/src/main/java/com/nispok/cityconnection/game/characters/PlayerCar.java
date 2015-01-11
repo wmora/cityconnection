@@ -12,6 +12,14 @@ public class PlayerCar extends Car {
     }
 
     /**
+     * Changes direction, from {@link com.nispok.cityconnection.game.characters.Direction#RIGHT} to
+     * {@link com.nispok.cityconnection.game.characters.Direction#LEFT} and vice-versa
+     */
+    public void changeDirection() {
+        direction = direction == Direction.RIGHT ? Direction.LEFT : Direction.RIGHT;
+    }
+
+    /**
      * @return number of oil cans left
      */
     public int getOilCansLeft() {

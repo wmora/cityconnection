@@ -25,14 +25,6 @@ public class Car {
     }
 
     /**
-     * Changes direction, from {@link com.nispok.cityconnection.game.characters.Direction#RIGHT} to
-     * {@link com.nispok.cityconnection.game.characters.Direction#LEFT} and vice-versa
-     */
-    public void changeDirection() {
-        direction = direction == Direction.RIGHT ? Direction.LEFT : Direction.RIGHT;
-    }
-
-    /**
      * @return this {@link com.nispok.cityconnection.game.characters.Car}'s speed
      */
     public int getSpeed() {
