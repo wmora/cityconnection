@@ -4,9 +4,9 @@ import junit.framework.TestCase;
 
 public class CityTest extends TestCase {
 
-    public void testCityShouldStartWithACar() {
+    public void testCityShouldStartWithAPlayerCar() {
         City city = new City();
-        assertNotNull(city.getCar());
+        assertNotNull(city.getPlayerCar());
     }
 
     public void testCityShouldStartWithAState() {

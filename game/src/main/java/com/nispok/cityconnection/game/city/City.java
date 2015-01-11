@@ -1,6 +1,6 @@
 package com.nispok.cityconnection.game.city;
 
-import com.nispok.cityconnection.game.characters.Car;
+import com.nispok.cityconnection.game.characters.PlayerCar;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -8,12 +8,12 @@ import java.util.List;
 import java.util.Map;
 
 public class City {
-    private Car car;
+    private PlayerCar playerCar;
     private CityState state;
     private Map<Integer, List<Street>> streetMap;
 
     public City() {
-        car = new Car();
+        playerCar = new PlayerCar();
         state = CityState.READY;
         setUpStreetMap();
     }
@@ -25,8 +25,8 @@ public class City {
         }
     }
 
-    public Car getCar() {
-        return car;
+    public PlayerCar getPlayerCar() {
+        return playerCar;
     }
 
     public CityState getState() {
