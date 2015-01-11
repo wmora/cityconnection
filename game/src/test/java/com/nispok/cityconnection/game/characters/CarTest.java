@@ -4,12 +4,12 @@ import junit.framework.TestCase;
 
 public class CarTest extends TestCase {
 
-    public void testPlayerShouldStartWithFiveOilCans() {
+    public void testCarShouldStartWithFiveOilCans() {
         Car car = new Car();
         assertEquals(5, car.getOilCansLeft());
     }
 
-    public void testPlayerShouldStartWithZeroMileage() {
+    public void testCarShouldStartWithZeroMileage() {
         Car car = new Car();
         assertEquals(0, car.getMileage());
     }
@@ -21,18 +21,18 @@ public class CarTest extends TestCase {
         assertEquals(oilCansLeft - 1, car.getOilCansLeft());
     }
 
-    public void testPlayerShouldStartMovingRight() {
+    public void testCarShouldStartMovingRight() {
         Car car = new Car();
         assertEquals(Direction.RIGHT, car.getDirection());
     }
 
-    public void testPlayerShouldChangeDirectionToLeftIfMovingRight() {
+    public void testCarShouldChangeDirectionToLeftIfMovingRight() {
         Car car = new Car();
         car.changeDirection();
         assertEquals(Direction.LEFT, car.getDirection());
     }
 
-    public void testPlayerShouldChangeDirectionToRightIfMovingLeft() {
+    public void testCarShouldChangeDirectionToRightIfMovingLeft() {
         Car car = new Car();
         car.changeDirection();
         car.changeDirection();
