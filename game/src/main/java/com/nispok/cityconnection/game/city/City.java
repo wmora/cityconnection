@@ -8,6 +8,9 @@ import java.util.List;
 import java.util.Map;
 
 public class City {
+
+    private static final int STREET_LEVELS = 4;
+
     private PlayerCar playerCar;
     private CityState state;
     private Map<Integer, List<Street>> streetMap;
@@ -20,7 +23,7 @@ public class City {
 
     private void setUpStreetMap() {
         streetMap = new HashMap<Integer, List<Street>>();
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < STREET_LEVELS; i++) {
             streetMap.put(i, new ArrayList<Street>());
         }
     }
