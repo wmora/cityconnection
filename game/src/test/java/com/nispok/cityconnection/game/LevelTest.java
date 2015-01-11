@@ -4,6 +4,11 @@ import junit.framework.TestCase;
 
 public class LevelTest extends TestCase {
 
+    public void testLevelShouldStartWithACity() {
+        Level level = new Level();
+        assertNotNull(level.getCity());
+    }
+
     public void testLevelShouldStartWithAState() {
         Level level = new Level();
         assertNotNull(level.getState());
