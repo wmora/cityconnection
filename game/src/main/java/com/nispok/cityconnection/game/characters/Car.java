@@ -2,17 +2,10 @@ package com.nispok.cityconnection.game.characters;
 
 public class Car {
 
-    private final int speed = 15;
-
-    private int oilCansLeft;
-    private float mileage;
-    private Direction direction;
-
-    public Car() {
-        oilCansLeft = 5;
-        mileage = 0;
-        direction = Direction.RIGHT;
-    }
+    protected int speed;
+    protected int oilCansLeft;
+    protected float mileage;
+    protected Direction direction;
 
     public int getOilCansLeft() {
         return oilCansLeft;
@@ -20,10 +13,6 @@ public class Car {
 
     public float getMileage() {
         return mileage;
-    }
-
-    public void shoot() {
-        oilCansLeft--;
     }
 
     public Direction getDirection() {
