@@ -12,12 +12,10 @@ public class City {
     private static final int STREET_LEVELS = 4;
 
     private PlayerCar playerCar;
-    private CityState state;
     private Map<Integer, List<Street>> streetMap;
 
     public City() {
         playerCar = new PlayerCar();
-        state = CityState.READY;
         setUpStreetMap();
     }
 
@@ -30,26 +28,6 @@ public class City {
 
     public PlayerCar getPlayerCar() {
         return playerCar;
-    }
-
-    public CityState getState() {
-        return state;
-    }
-
-    public void start() {
-        state = CityState.PLAYING;
-    }
-
-    public void pause() {
-        state = CityState.PAUSED;
-    }
-
-    public void resume() {
-        state = CityState.PLAYING;
-    }
-
-    public void finish() {
-        state = CityState.OVER;
     }
 
     public Map<Integer, List<Street>> getStreetMap() {
