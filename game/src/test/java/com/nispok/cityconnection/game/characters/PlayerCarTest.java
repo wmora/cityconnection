@@ -4,12 +4,12 @@ import junit.framework.TestCase;
 
 public class PlayerCarTest extends TestCase {
 
-    public void testCarShouldStartWithFiveOilCans() {
+    public void testPlayerCarShouldStartWithFiveOilCans() {
         PlayerCar playerCar = new PlayerCar();
         assertEquals(5, playerCar.getOilCansLeft());
     }
 
-    public void testCarShouldStartWithZeroMileage() {
+    public void testPlayerCarShouldStartWithZeroMileage() {
         PlayerCar playerCar = new PlayerCar();
         assertEquals(0f, playerCar.getMileage());
     }
@@ -30,25 +30,25 @@ public class PlayerCarTest extends TestCase {
         assertEquals(0, playerCar.getOilCansLeft());
     }
 
-    public void testCarShouldStartMovingRight() {
+    public void testPlayerCarShouldStartMovingRight() {
         PlayerCar playerCar = new PlayerCar();
         assertEquals(Direction.RIGHT, playerCar.getDirection());
     }
 
-    public void testCarShouldChangeDirectionToLeftIfMovingRight() {
+    public void testPlayerCarShouldChangeDirectionToLeftIfMovingRight() {
         PlayerCar playerCar = new PlayerCar();
         playerCar.changeDirection();
         assertEquals(Direction.LEFT, playerCar.getDirection());
     }
 
-    public void testCarShouldChangeDirectionToRightIfMovingLeft() {
+    public void testPlayerCarShouldChangeDirectionToRightIfMovingLeft() {
         PlayerCar playerCar = new PlayerCar();
         playerCar.changeDirection();
         playerCar.changeDirection();
         assertEquals(Direction.RIGHT, playerCar.getDirection());
     }
 
-    public void testCarSpeedShouldBe15MilesPerSecond() {
+    public void testPlayerCarSpeedShouldBe15MilesPerSecond() {
         PlayerCar playerCar = new PlayerCar();
         assertEquals(15, playerCar.getSpeed());
     }
