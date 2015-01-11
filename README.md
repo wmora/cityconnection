@@ -1,1 +1,2 @@
 [![Build Status](https://travis-ci.org/wmora/cityconnection.svg?branch=master)](https://travis-ci.org/wmora/cityconnection)
+[![Coverage Status](https://img.shields.io/coveralls/wmora/cityconnection.svg)](https://coveralls.io/r/wmora/cityconnection?branch=master)
