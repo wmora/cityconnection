@@ -10,6 +10,7 @@ public class Street {
     public Street() {
         blocks = new ArrayList<Block>();
         blocks.add(new Block());
+        blocks.add(new Block());
     }
 
     public List<Block> getBlocks() {

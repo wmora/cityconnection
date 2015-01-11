@@ -11,7 +11,7 @@ public class StreetTest extends TestCase {
 
     public void testStreetShouldHaveAtLestOneBlock() {
         Street street = new Street();
-        assertTrue(street.getBlocks().size() == 1);
+        assertTrue(street.getBlocks().size() > 0);
     }
 
     public void testStreetShouldBeClearedIfAllBlocksAreCleared() {
@@ -20,6 +20,14 @@ public class StreetTest extends TestCase {
             block.clear();
         }
         assertTrue(street.isCleared());
+    }
+
+    public void testStreetShouldNotBeClearedIfAtLeastOneBlockIsNotCleared() {
+        Street street = new Street();
+        for (int i = 0; i < street.getBlocks().size() - 1; i++) {
+            street.getBlocks().get(i).clear();
+        }
+        assertFalse(street.isCleared());
     }
 
 }
