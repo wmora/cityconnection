@@ -14,4 +14,15 @@ public class PoliceCarTest extends TestCase {
         assertEquals(12, policeCar.getSpeed());
     }
 
+    public void testPoliceCarShouldNotBeHitByDefault() {
+        PoliceCar policeCar = new PoliceCar();
+        assertFalse(policeCar.isHit());
+    }
+
+    public void testPoliceCarShouldBeHitAfterHit() {
+        PoliceCar policeCar = new PoliceCar();
+        policeCar.hit();
+        assertTrue(policeCar.isHit());
+    }
+
 }
