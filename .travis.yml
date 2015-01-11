@@ -1,4 +1,7 @@
 language: java
 
 script:
-  - ./gradlew :game:test jacocoTestReport
+  - ./gradlew :game:test
+
+after_success:
+  - ./gradlew jacocoTestReport coveralls
