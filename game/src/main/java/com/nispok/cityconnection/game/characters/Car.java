@@ -5,7 +5,7 @@ public class Car {
     private final int speed = 15;
 
     private int oilCansLeft;
-    private int mileage;
+    private float mileage;
     private Direction direction;
 
     public Car() {
@@ -18,7 +18,7 @@ public class Car {
         return oilCansLeft;
     }
 
-    public int getMileage() {
+    public float getMileage() {
         return mileage;
     }
 
@@ -36,5 +36,15 @@ public class Car {
 
     public int getSpeed() {
         return speed;
+    }
+
+    /**
+     * Updates de {@link com.nispok.cityconnection.game.characters.Car} mileage given the time passed since the last
+     * update. Note that mileage is always incremented, even with a negative delta
+     *
+     * @param delta time passed, in seconds, since the last mileage update
+     */
+    public void updateMileage(float delta) {
+        mileage += speed * Math.abs(delta);
     }
 }

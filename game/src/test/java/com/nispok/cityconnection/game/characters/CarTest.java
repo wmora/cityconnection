@@ -11,7 +11,7 @@ public class CarTest extends TestCase {
 
     public void testCarShouldStartWithZeroMileage() {
         Car car = new Car();
-        assertEquals(0, car.getMileage());
+        assertEquals(0f, car.getMileage());
     }
 
     public void testOilCansShouldDecreaseAfterShooting() {
@@ -42,6 +42,20 @@ public class CarTest extends TestCase {
     public void testCarSpeedShouldBe15MilesPerSecond() {
         Car car = new Car();
         assertEquals(15, car.getSpeed());
+    }
+
+    public void testMileageShouldIncrementWhenUpdatingWithAPositiveDeltaTime() {
+        Car car = new Car();
+        car.updateMileage(1f);
+        car.updateMileage(1f);
+        assertEquals(30f, car.getMileage());
+    }
+
+    public void testMileageShouldIncrementWhenUpdatingWithANegativeDeltaTime() {
+        Car car = new Car();
+        car.updateMileage(1f);
+        car.updateMileage(-1f);
+        assertEquals(30f, car.getMileage());
     }
 
 }
