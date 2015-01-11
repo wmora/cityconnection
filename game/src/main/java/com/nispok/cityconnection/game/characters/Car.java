@@ -2,6 +2,8 @@ package com.nispok.cityconnection.game.characters;
 
 public class Car {
 
+    private final int speed = 15;
+
     private int oilCansLeft;
     private int mileage;
     private Direction direction;
@@ -30,5 +32,9 @@ public class Car {
 
     public void changeDirection() {
         direction = direction == Direction.RIGHT ? Direction.LEFT : Direction.RIGHT;
+    }
+
+    public int getSpeed() {
+        return speed;
     }
 }

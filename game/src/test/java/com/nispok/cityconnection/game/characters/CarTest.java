@@ -39,4 +39,9 @@ public class CarTest extends TestCase {
         assertEquals(Direction.RIGHT, car.getDirection());
     }
 
+    public void testCarSpeedShouldBe15MilesPerSecond() {
+        Car car = new Car();
+        assertEquals(15, car.getSpeed());
+    }
+
 }
